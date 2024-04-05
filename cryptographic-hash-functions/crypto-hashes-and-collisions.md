@@ -14,7 +14,7 @@ A **collision** means the same hash value for two different inputs. For simple h
 
 Cryptographic hash functions are **one-way hash functions**, which are **infeasible to invert**. The chance to find a collision (by brute force) for a strong cryptographic hash function (like SHA-256) is extremely little. Let's define this in more details:
 
-* Let's have hash value `h`=`hash(p)` for certain strong cryptographic hash function `hash`.
+* Let's have a hash value `h`=`hash(p)` for a certain strong cryptographic hash function `hash`.
 * It is expected to be **extremely hard** to find an input `p'`, such that `hash(p')`=`h`.
 * For most modern strong cryptographic hash functions there are **no known collisions**.
 
