@@ -48,7 +48,7 @@ Cryptography provides **cryptographic hash functions** (like SHA-3 and BLAKE2), 
 
 ### Confusion and Diffusion in Cryptography
 
-In cryptography the hashing, encryption algorithms and random generators follow the Shannon's principles of[ confusion and diffusion](https://en.wikipedia.org/wiki/Confusion\_and\_diffusion). **Confusion** means that each bit in the output form a cipher should depend on several parts of the key and input data and thus direct mapping cannot be established. **Diffusion** means that changing one bit in the input should change approximately half of the bits in the output. These principles are incorporated in most hash functions, MAC algorithms, random number generators, symmetric and asymmetric ciphers.
+In cryptography the hashing, encryption algorithms and random generators follow the Shannon's principles of[ confusion and diffusion](https://en.wikipedia.org/wiki/Confusion\_and\_diffusion). **Confusion** means that each bit in the output form of a cipher should depend on several parts of the key and input data so that direct mapping cannot be established. **Diffusion** means that changing one bit in the input should change approximately half of the bits in the output. These principles are incorporated in most hash functions, MAC algorithms, random number generators, symmetric and asymmetric ciphers.
 
 ### Cryptographic Libraries
 
