@@ -59,7 +59,7 @@ The entire **AES encryption** process (password-based authenticated encryption) 
     <img src="../.gitbook/assets/aes-input-output.png" alt="" data-size="original">
 
     * In case of **authenticated encryption** (e.g. AES-GCM), the MAC is already calculated automatically during the AES encryption process.
-    *   If the encryption scheme is **not authenticated encryption** (e.g. AER-CTR), the MAC code is not calculated automatically by the AES encryption process and should be calculated additionally. The **MAC code** can be calculated from the **input msg**, using the encryption **key** (or some transformation of it) and some **MAC function** (like HMAC-SHA-256):
+    *   If the encryption scheme is **not authenticated encryption** (e.g. AES-CTR), the MAC code is not calculated automatically by the AES encryption process and should be calculated additionally. The **MAC code** can be calculated from the **input msg**, using the encryption **key** (or some transformation of it) and some **MAC function** (like HMAC-SHA-256):
 
         <img src="../.gitbook/assets/hmac-calculation-aes.png" alt="" data-size="original">
     *   The **ciphertext** is calculated through the **AES encryption algorithm**. It first **generates a random salt** (**IV**) and uses it to transform the **input msg** using the **encryption key**, through the AES cipher encryption logic:
